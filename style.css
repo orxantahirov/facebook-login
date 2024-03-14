@@ -13,6 +13,7 @@ body {
   justify-content: space-around;
   height: 100vh;
   align-items: center;
+  flex-wrap: wrap;
 }
 .main form {
   width: 396px;
@@ -206,7 +207,7 @@ body {
 .gender input[type="radio"] {
   outline: none;
 }
-.gender > div {
+.gen {
   display: flex;
   gap: 15px;
   border: 1px solid #000;
@@ -245,4 +246,36 @@ body {
   overflow: hidden;
   padding: 0 32px;
   text-shadow: none;
+}
+
+@media screen and (max-width: 900px) {
+  .main form {
+    width: 40%;
+  }
+  .main .content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main form {
+    width: 90%;
+  }
+  .main .content {
+    width: 100%;
+    text-align: center;
+  }
+  .content p {
+    width: 100%;
+    text-align: center;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .modal {
+    width: 300px;
+  }
 }

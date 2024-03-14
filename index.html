@@ -28,7 +28,7 @@
         </div>
         <hr />
         <div class="add_login">
-          <button id="open">Yeni hesab yarat</button>
+          <button type="button" id="open">Yeni hesab yarat</button>
         </div>
       </form>
     </section>
@@ -38,7 +38,9 @@
     <section class="show" id="modalShow">
       <div class="modal" id="modal">
         <form action="#">
-          <button class="exit cancel"><i class="fa-solid fa-xmark"></i></button>
+          <button type="button" class="exit cancel">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
           <div class="register_content">
             <h2>Qeydiyyatdan keç</h2>
             <hr />
@@ -117,15 +119,15 @@
             </div>
             <p class="born_content">Cinsi</p>
             <div class="gender">
-              <div>
+              <div class="gen">
                 <label for="male">Kişi</label>
                 <input type="radio" id="male" name="gender" />
               </div>
-              <div>
+              <div class="gen">
                 <label for="female">Qadın</label>
                 <input type="radio" id="female" name="gender" />
               </div>
-              <div>
+              <div class="gen">
                 <label for="middle">Fərdi</label>
                 <input type="radio" id="middle" name="gender" />
               </div>
